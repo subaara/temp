@@ -1,0 +1,652 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<fallback useFallback='false'/>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://www.facebook.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"sgfsfvvsdv"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;firstname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_l&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;First name[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"sfvdfbdbdgbb"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;lastname&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;u_0_n&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[1]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Surname[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(1)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"1234567890"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;u_0_q&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;reg_email__&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;uiStickyPlaceholderInput[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0,_in(div(&quot;Mobile number or email address[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(2)' selected='false'/>
+   <accessor type='setValue' value='textbox(&quot;_2ph- _58mg _5dba inputtext[2]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"asdfghjkiuytre"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;_2ph- _58mg _5dba inputtext&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;u_0_x&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;reg_passwd__&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;uiStickyPlaceholderInput[3]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0,_in(div(&quot;New password[2]&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(1)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='radio(&quot;sex[1]&quot;)' selected='true'/>
+   <accessor type='click' value='radio(&quot;u_0_6&quot;)' selected='false'/>
+   <accessor type='click' value='radio(&quot;2&quot;)' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;_5dba _5k_2[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(0,_in(span(&quot;Male&quot;)))' selected='false'/>
+   <accessor type='click' value='radio(1)' selected='false'/>
+   <accessor type='click' value='radio(&quot;_8esa[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"123456789"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;pass&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='setValue' value='password(&quot;inputtext login_form_input_box&quot;)' selected='false'/>
+</dialect>
+</step>
+</testcase>
