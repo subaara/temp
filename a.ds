@@ -1,27 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testcase  name= '' description='' author='' version=''>
-<dpl filename='{ds}/serial.csv' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
 <fallback useFallback='false'/>
-<step action='navigateTo' value='"http://sahitest.com/demo/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='addHashDPL' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='navigateTo' value='' selected='true'/>
-</dialect>
-</step>
-<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='click' value='link(&quot;a x&quot;)' selected='true'/>
-   <accessor type='click' value='link(&quot;linkTest.htm&quot;)' selected='false'/>
-   <accessor type='click' value='link(&quot;Link Test&quot;)' selected='false'/>
-   <accessor type='click' value='link(0)' selected='false'/>
-   <accessor type='click' value='link(&quot;a x a&quot;)' selected='false'/>
-</dialect>
-</step>
-<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='click' value='link(&quot;linkById&quot;)' selected='true'/>
-   <accessor type='click' value='link(&quot;linkByContent.htm&quot;)' selected='false'/>
-   <accessor type='click' value='link(&quot;linkByContent&quot;)' selected='false'/>
-   <accessor type='click' value='link(0)' selected='false'/>
+   <accessor type='addHashDPL' value='' selected='true'/>
 </dialect>
 </step>
 </testcase>
