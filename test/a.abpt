@@ -1,0 +1,1209 @@
+{"blueprint": {
+    "reportDuration": 2000,
+    "templates": [],
+    "maxBrowsers": 1,
+    "ignoreURLs": [],
+    "version": 300,
+    "visualHints": true,
+    "url": "http://www.sahitest.com/",
+    "executionName": "a",
+    "uniqueDS": false,
+    "stLibraryId": 0,
+    "baseURL": "http://www.sahitest.com",
+    "blueprintType": "web",
+    "delay": 10,
+    "dataSetNames": [{
+        "values": {"baseURL": "http://www.sahitest.com"},
+        "name": "Default",
+        "used": true
+    }],
+    "browser": "Chrome",
+    "usePreviousBindings": false,
+    "setupJS": "",
+    "files": [],
+    "scanType": ["Smarttags"],
+    "dplType": "HashDPL",
+    "selfHealing": false,
+    "validDomains": ["http://www.sahitest.com"],
+    "reportStatusCode": 400,
+    "stLibraries": [{
+        "customTags": [
+            "orn-notification",
+            "kendo-dropdownlist",
+            "kendo-combobox"
+        ],
+        "extractors": [],
+        "validators": [],
+        "threshold": 0.75,
+        "actions": [
+            {
+                "functionString": "ds$(element).css('color','black');\nds$(element).css('background','#4ae456');\n_ds.click(element);return true;",
+                "previousActions": [],
+                "name": "onClick",
+                "postActions": [],
+                "arrayHint": "[]"
+            },
+            {
+                "functionString": "_ds.click(ds$('span.k-select',element)[0]);return true;",
+                "previousActions": [],
+                "name": "kendoDropDownClick",
+                "postActions": [],
+                "arrayHint": "[]"
+            },
+            {
+                "functionString": "_ds.click(ds$('span.k-select',element)[0]);return true;",
+                "previousActions": [],
+                "name": "kendoClick",
+                "postActions": [],
+                "arrayHint": "[]"
+            },
+            {
+                "functionString": "var selectValues = [];\nds$('ul.k-list[role=listbox] > li').each(function(idx, theElement){\n\tvar elementValue = ds$(theElement).text().trim();\n\tselectValues.push(elementValue);\n});\nds$('kendo-list').remove();\n\nreturn selectValues;",
+                "previousActions": ["getInputSelectClick"],
+                "name": "getInputSelectValue",
+                "postActions": [],
+                "arrayHint": "array"
+            },
+            {
+                "functionString": "function fireMouseEvents( query, eventNames ){\n    var oElement = document.querySelector(query);\n    if(oElement && eventNames && eventNames.length){\n        for(var index in eventNames){\n            var eventName = eventNames[index];\n            if(oElement.fireEvent ){\n                oElement.fireEvent( 'on' + eventName );     \n            } else {   \n                var eventObject = document.createEvent( 'MouseEvents' );\n                eventObject.initEvent( eventName, true, false );\n                oElement.dispatchEvent(eventObject);\n            }\n        }\n    }\n}\nvar parentDataAU = element.parent().parent().parent().attr('data-au');\nvar divClass = element.attr('class')\n\nfireMouseEvents(\"kendo-multiselect[data-au=\"+ parentDataAU +\"] input.\" + divClass,['mousedown','mouseup','click']);",
+                "previousActions": [],
+                "name": "getInputSelectClick",
+                "postActions": [],
+                "arrayHint": "[]"
+            },
+            {
+                "functionString": "var found = false; ds$('kendo-list ul.k-list li').each(function(key,value){if(ds$(value).text().trim()=== params){_ds.click(value,'');}}); return found;",
+                "previousActions": ["kendoDropDownClick"],
+                "name": "kendoDropDownSetValues",
+                "postActions": [],
+                "arrayHint": "[]"
+            },
+            {
+                "functionString": "var found = false; ds$('kendo-popup kendo-list li').each(function(key,value){if(ds$(value).text().trim()=== params){_ds.click(value,'');}}); return found;",
+                "previousActions": ["kendoClick"],
+                "name": "kendoSetValues",
+                "postActions": [],
+                "arrayHint": "[]"
+            },
+            {
+                "functionString": "var found = false;\nds$('ul.k-list[role=listbox] > li').each(function(idx, theElement){\n\tvar elementValue = ds$(theElement).text().trim();\n\tif (params == elementValue) {\n\t\tds$(theElement).click();\n\t\tds$('kendo-list').remove();\n\t\tfound = true;\n\t}\n});\nreturn found;",
+                "previousActions": [],
+                "name": "setInputSelectValue",
+                "postActions": [],
+                "arrayHint": "[]"
+            },
+            {
+                "functionString": "var theElement = ds$(element);\nvar name = theElement.text();\n\nif (name === \"\") {\n  name = theElement.attr('placeholder');\n}\nif (typeof name === 'undefined') {\n  name = \"\";\n}\nif (name === \"\"){\n  name = theElement.attr('name');\n}\nif (typeof name === 'undefined') {\n  name = \"\";\n}\nif (name === \"\") {\n  name = theElement.attr('title');\n}\nif (typeof name === 'undefined') {\n  name = \"\";\n}\nvar isRequired = theElement.attr('required');\ntheElement.css('color','white');\nif (typeof isRequired !== 'undefined'){\n  theElement.css('background','red');\n} else {\n  theElement.css('background','#a1e2f1');\n}\n\nreturn name.replace(/(\\r\\n|\\n|\\r)/gm, \"\").trim();\n",
+                "previousActions": [],
+                "name": "getElementName",
+                "postActions": [],
+                "arrayHint": ""
+            },
+            {
+                "functionString": "var temp=[]; ds$('kendo-popup kendo-list li').each(function(key,value) { temp.push(ds$(value).text().trim());}); console.log(temp); return temp;",
+                "previousActions": ["kendoClick"],
+                "name": "kendoGetValues",
+                "postActions": ["kendoClick"],
+                "arrayHint": "array"
+            },
+            {
+                "functionString": "var temp=[]; ds$('kendo-list ul.k-list li').each(function(key,value) { temp.push(ds$(value).text().trim());}); console.log(temp); return temp;",
+                "previousActions": ["kendoDropDownClick"],
+                "name": "kendoDropDownGetValues",
+                "postActions": ["kendoDropDownClick"],
+                "arrayHint": "array"
+            }
+        ],
+        "smartTags": [
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "appealName",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "placeholder:Enter Name of Appeal Level"
+                }],
+                "type": "Text",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getSelectValues": "kendoGetValues",
+                    "getName": "getElementName",
+                    "setSelected": "kendoSetValues"
+                },
+                "scanOncePerApp": false,
+                "name": "textSelect",
+                "disabled": false,
+                "rules": [],
+                "type": "Select",
+                "tags": ["kendo-combobox"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "elementEdit",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "href:/am/administration/audit-config"
+                }],
+                "type": "Navigation",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "auditingBodie",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "/am/administration/auditing-body"
+                }],
+                "type": "Navigation",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "listPeople",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:double-arrow-link"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getName": "getElementName",
+                    "click": "onClick"
+                },
+                "scanOncePerApp": false,
+                "name": "btnSec",
+                "disabled": true,
+                "rules": [],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "organizationUnitItem",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "li class=\"k-item ng-tns-"
+                }],
+                "type": "Action",
+                "tags": ["li"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "inputSelect",
+                "disabled": false,
+                "rules": [
+                    {
+                        "weight": 100,
+                        "type": "attrContainsValue",
+                        "value": "placeholder:Select"
+                    },
+                    {
+                        "weight": 100,
+                        "type": "attrContainsValue",
+                        "value": "role:listBox"
+                    }
+                ],
+                "type": "Select",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "getAudit",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "class=\"nav-item-text\">Audits"
+                }],
+                "type": "Action",
+                "tags": ["span"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "organizationEditionPanel",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:org-control-link"
+                }],
+                "type": "Action",
+                "tags": ["div"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "buttonTypeSubmit",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "type:submit"
+                }],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {"getName": "getElementName"},
+                "scanOncePerApp": false,
+                "name": "inputField",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "type:text"
+                }],
+                "type": "Text",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": true,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "notification",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:notification"
+                }],
+                "type": "Prop",
+                "tags": ["orn-notification"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {"getName": "getElementName"},
+                "scanOncePerApp": false,
+                "name": "password",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "type:password"
+                }],
+                "type": "Text",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "parentPageIndex",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:k-pager-numbers"
+                }],
+                "type": "Prop",
+                "tags": ["ul"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getName": "getElementName",
+                    "click": "onClick"
+                },
+                "scanOncePerApp": false,
+                "name": "tab",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "role:tab"
+                }],
+                "type": "Action",
+                "tags": ["li"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "create",
+                "disabled": true,
+                "rules": [
+                    {
+                        "weight": 100,
+                        "type": "containsText",
+                        "value": "Create"
+                    },
+                    {
+                        "weight": 100,
+                        "type": "attrContainsValue",
+                        "value": "type:submit"
+                    }
+                ],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "inputForm",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "parentsSmartTag",
+                    "value": "formNoise"
+                }],
+                "type": "Text",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getSelectValues": "kendoDropDownGetValues",
+                    "getName": "getElementName",
+                    "setSelected": "kendoDropDownSetValues"
+                },
+                "scanOncePerApp": false,
+                "name": "numSelect",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:k-dropdown"
+                }],
+                "type": "Select",
+                "tags": ["kendo-dropdownlist"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "tabElement",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "href=\"#tab"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "locationInput",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "name=\"location\" placeholder=\"Select Location\""
+                }],
+                "type": "Action",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "popUpToSelectParent",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:k-treeview-lines"
+                }],
+                "type": "Prop",
+                "tags": ["ul"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": true,
+                "name": "childMenuLeftSideBarHorizontal",
+                "disabled": true,
+                "rules": [
+                    {
+                        "weight": 100,
+                        "type": "attrContainsValue",
+                        "value": "class:wk-icon-chevron-right"
+                    },
+                    {
+                        "weight": 100,
+                        "type": "parentsSmartTag",
+                        "value": "parentMenu"
+                    }
+                ],
+                "type": "Action",
+                "tags": ["i"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "organizationUnit",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:floatLeft lineHeight25 marginLeft5"
+                }],
+                "type": "Hover",
+                "tags": ["span"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "selectFromPopUp",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "parentsSmartTag",
+                    "value": "popUpToSelectParent"
+                }],
+                "type": "Action",
+                "tags": ["div"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getName": "getElementName",
+                    "click": "onClick"
+                },
+                "scanOncePerApp": false,
+                "name": "addEntry",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsText",
+                    "value": "Add"
+                }],
+                "type": "Action",
+                "tags": [
+                    "input",
+                    "button",
+                    "a"
+                ],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "managePeoplespButton",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "class=\"button"
+                }],
+                "type": "Action",
+                "tags": ["span"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "tabIndicator",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:form-builder-tab"
+                }],
+                "type": "Action",
+                "tags": ["li"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "itemAttribute",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "id:item-definition-div-attribute-wrapper"
+                }],
+                "type": "Action",
+                "tags": ["div"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": true,
+                "name": "aMenuLeft",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "class=\"orn-nav-item-text\""
+                }],
+                "type": "Navigation",
+                "tags": ["span"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "txtfieldQuestion",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:input"
+                }],
+                "type": "Select",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {"getName": "getElementName"},
+                "scanOncePerApp": false,
+                "name": "searchField",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "type:search"
+                }],
+                "type": "Text",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getName": "getElementName",
+                    "click": "onClick"
+                },
+                "scanOncePerApp": false,
+                "name": "link",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:orn-nav-item"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "manageDefaultList",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "data-bind=\"attr:{href: editHref()}"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "otherCreate",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "href:/Create"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "linkPagePeople",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "data-bind:addUser"
+                }],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getName": "getElementName",
+                    "click": "onClick"
+                },
+                "scanOncePerApp": true,
+                "name": "btnEntry",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "parent",
+                    "value": "td"
+                }],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "parentMenu",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:orn-nav"
+                }],
+                "type": "Prop",
+                "tags": ["ul"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getName": "getElementName",
+                    "click": "onClick"
+                },
+                "scanOncePerApp": false,
+                "name": "button",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "type:button"
+                }],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "cancelButton",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "wk-button:secondary"
+                }],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "manageProfilesList",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "href:/SystemType/Edit"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "checkbox",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "parent",
+                    "value": "tr"
+                }],
+                "type": "Action",
+                "tags": ["tbody"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "createButton",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsText",
+                    "value": "Create"
+                }],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "applyBtn",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "data-au:apply-filters-button"
+                }],
+                "type": "Action",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "formNoise",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:ng-untouched ng-pristine ng-invalid"
+                }],
+                "type": "Noise",
+                "tags": ["form"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "managePeopletbRow",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "role=\"row\" class=\"pointer\""
+                }],
+                "type": "Action",
+                "tags": ["tr"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getName": "getElementName",
+                    "click": "onClick"
+                },
+                "scanOncePerApp": false,
+                "name": "btnNative",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "class:wk-button-success"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "auditClaimLink",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "href=\"/am/"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": true,
+                "name": "childMenuLeftSideBar",
+                "disabled": true,
+                "rules": [
+                    {
+                        "weight": 100,
+                        "type": "attrContainsValue",
+                        "value": "class:orn-nav-item-icon wk-icon-chevron-down"
+                    },
+                    {
+                        "weight": 100,
+                        "type": "parentSmartTag",
+                        "value": "aMenuLeft"
+                    }
+                ],
+                "type": "Action",
+                "tags": ["i"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "parentItemDefinition",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "id:items-definitions"
+                }],
+                "type": "Prop",
+                "tags": ["div"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "btnSaved",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsText",
+                    "value": "Save"
+                }],
+                "type": "Navigation",
+                "tags": ["button"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {
+                    "getName": "getElementName",
+                    "click": "onClick"
+                },
+                "scanOncePerApp": false,
+                "name": "aWK",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "wk-context:success"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "audiConfiguratonsList",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "href:/am/administration/audit-config"
+                }],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "pageIndex",
+                "disabled": true,
+                "rules": [
+                    {
+                        "weight": 100,
+                        "type": "attrContainsValue",
+                        "value": "class:k-link"
+                    },
+                    {
+                        "weight": 100,
+                        "type": "parentsSmartTag",
+                        "value": "parentPageIndex"
+                    }
+                ],
+                "type": "Action",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {"getName": "getElementName"},
+                "scanOncePerApp": false,
+                "name": "enterData",
+                "disabled": false,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "placeholder:Enter"
+                }],
+                "type": "Text",
+                "tags": ["input"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": true,
+                "name": "childMenuLeft",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "containsHtml",
+                    "value": "class=\"orn-nav-item orn-nav-item--a\""
+                }],
+                "type": "Navigation",
+                "tags": ["a"],
+                "info": {}
+            },
+            {
+                "singleton": false,
+                "scanOnePerPage": false,
+                "extractors": [],
+                "validators": [],
+                "methods": {},
+                "scanOncePerApp": false,
+                "name": "auditName",
+                "disabled": true,
+                "rules": [{
+                    "weight": 100,
+                    "type": "attrContainsValue",
+                    "value": "name:configurationName"
+                }],
+                "type": "Text",
+                "tags": ["input"],
+                "info": {}
+            }
+        ]
+    }]
+}}
