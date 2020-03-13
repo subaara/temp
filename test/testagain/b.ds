@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testcase  name= '' description='' author='' version=''>
-<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<dpl filename='{ds}/d.csv' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
 <fallback useFallback='false'/>
 <step action='navigateTo' value='"http://sahitest.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
