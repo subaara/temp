@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testcase  name= '' description='' author='' version=''>
-<dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
+<dpl filename='REPOSITORY/Testing/AIQ-3888/a.csv' exectype='runstepbystep' errorhandling='' type='HashDPL'/>
 <fallback useFallback='false'/>
-<step action='addHashDPL' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='log' value='s' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='addHashDPL' value='' selected='true'/>
+   <accessor type='log' value='' selected='true'/>
 </dialect>
 </step>
 </testcase>
